@@ -8,6 +8,7 @@
 
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -35,13 +36,8 @@ a {
 }
 
 .header-top {
-	position: sticky;
-	position: -webkit-sticky;
-	top: -30px;
-	left: 0;
 	display: flex;
 	align-items: center;
-	z-index: 1;
 }
 
 .logo {
@@ -132,7 +128,7 @@ a {
 }
 
 .action__btn {
-	display: block;
+	display: inline-block;
 	text-align: center;
 	font-size: 1.6rem;
 	padding: 8px 20px;
@@ -244,6 +240,133 @@ a {
 }
 
 .action__btn--hero:hover {
+	background: #1f5f9b;
+}
+
+/* ==== MAIN ==== */
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 170px;
+	padding: 170px 0;
+}
+
+/* 1. Service  */
+.service__header {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	align-items: center;
+}
+
+.service__header--title {
+	color: #10375c;
+	font-size: 5rem;
+	font-weight: 600;
+	line-height: 6rem; /* 120% */
+	letter-spacing: -0.1rem;
+}
+
+.service__header--desc {
+	width: 40%;
+	color: #575f66;
+	text-align: center;
+	font-size: 1.8rem;
+	font-weight: 300;
+	line-height: 3rem; /* 166.667% */
+}
+
+.service__body {
+	display: flex;
+	align-items: center;
+	margin-top: 7rem;
+}
+
+.service__body--image {
+	width: 49%;
+}
+
+.service__body--listServices {
+	width: 51%;
+	display: flex;
+	flex-direction: column;
+	gap: 55px;
+	padding-left: 10%;
+}
+
+.service__body--image img {
+	width: 570px;
+	height: 570px;
+	object-fit: cover;
+	object-position: 100% 0%;
+	border-radius: 12px;
+}
+
+.list-service {
+	display: flex;
+	flex-direction: column;
+}
+
+.item-service__style {
+	display: flex;
+	padding: 20px;
+	gap: 20px;
+	border-radius: 10px;
+}
+
+.service-icon {
+	color: #10375c;
+	border-radius: 50%;
+	background: #eff6fd;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.service-icon i {
+	font-size: 2.6rem;
+}
+
+.service-text {
+	width: 80%;
+}
+
+.service-text__title {
+	color: #10375c;
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.service-text__desc {
+	margin-top: 8px;
+	color: #575f66;
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 2.8rem; /* 175% */
+}
+
+.item-service a:hover .item-service__style {
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.item-service a:hover .service-icon {
+	color: #fff;
+	background: #2e80ce;
+	transition: all 0.3s ease-in-out;
+}
+
+.action__btn--service {
+	color: #fff;
+	padding: 15px 48px;
+	background: #2e80ce;
+	border-radius: 30px;
+}
+
+.action__btn--service:hover {
 	background: #1f5f9b;
 }
 
