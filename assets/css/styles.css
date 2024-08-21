@@ -847,8 +847,13 @@ a {
 	font-weight: 400;
 	line-height: 3rem; /* 166.667% */
 	padding: 15px 40px;
+	cursor: pointer;
 	border-radius: 30px;
 	background: #2e80ce;
+}
+
+.action__btn--contact:hover {
+	background: #1f5f9b;
 }
 
 /* ==== FOOTER ==== */
